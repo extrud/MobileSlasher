@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: 275c8f2ebf1309446b73cfbb2f40ef70
+timeCreated: 1477332208
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Char1_0
+    21300002: Char1_1
+    21300004: Char1_2
+    21300006: Char1_3
+    21300008: Char1_4
+    21300010: Char1_5
+    21300012: Char1_6
+    21300014: Char1_7
+    21300016: Char1_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Char1_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 363
+        width: 128
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char1_1
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 394
+        width: 81
+        height: 77
+      alignment: 9
+      pivot: {x: 0.36904022, y: 0.10508074}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char1_2
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 39
+        width: 123
+        height: 211
+      alignment: 9
+      pivot: {x: 0.876782, y: 0.8993462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char1_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 248
+        width: 93
+        height: 103
+      alignment: 9
+      pivot: {x: 0.4771876, y: 0.18417151}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char1_4
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 110
+        width: 101
+        height: 122
+      alignment: 9
+      pivot: {x: 0.48331442, y: 0.8591495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char1_5
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 144
+        width: 64
+        height: 88
+      alignment: 9
+      pivot: {x: 0.15768528, y: 0.83513314}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char1_6
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 12
+        width: 36
+        height: 50
+      alignment: 9
+      pivot: {x: 0.52340615, y: 0.92131037}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char1_7
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 15
+        width: 43
+        height: 56
+      alignment: 9
+      pivot: {x: 0.65676665, y: 0.9514033}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char1_8
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 259
+        width: 138
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
