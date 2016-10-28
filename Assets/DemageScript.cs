@@ -4,6 +4,8 @@ using System.Collections;
 public class DemageScript : MonoBehaviour {
     public delegate void dmgDlg();
     public float HP;
+    public float MaxHP;
+    public bool Invulnerable = false;
     public event dmgDlg OnDMG;
     public event dmgDlg OnDeath;
     public GameObject BloodParticle;
@@ -26,6 +28,10 @@ public class DemageScript : MonoBehaviour {
     }
     public void TakeDMG(float count)
     {
+        if (Invulnerable)
+        {
+            return;
+        }
         if (BloodCoroutone == null)
           BloodCoroutone= StartCoroutine(Blood());
         else
@@ -37,6 +43,8 @@ public class DemageScript : MonoBehaviour {
         if (HP < 0)
         {
             HP = 0;
+            Invulnerable = true;
+            
             if (OnDeath != null)
             {
                 OnDeath.Invoke();

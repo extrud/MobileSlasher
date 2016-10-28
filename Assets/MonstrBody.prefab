@@ -121,6 +121,7 @@ GameObject:
   - 114: {fileID: 114000011990936492}
   - 114: {fileID: 114000012985853966}
   - 114: {fileID: 114000012425167230}
+  - 114: {fileID: 114000013960523076}
   m_Layer: 0
   m_Name: MonstrBody
   m_TagString: Untagged
@@ -245,7 +246,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012845793088}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.21, y: -3.83, z: -0.010253906}
+  m_LocalPosition: {x: 31.79, y: 14.17, z: -0.010253906}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -555,6 +556,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41b9b87a00dc57d49b39349da0519b52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114000013960523076
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012845793088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d615f4393c2dd174db5a304dc383ac73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212000010185348558

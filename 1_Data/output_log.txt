@@ -6,23 +6,41 @@ Direct3D:
     Vendor:   ATI
     VRAM:     2772 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\POTEC\Desktop\TavernKeeper\Slahser for Mobile\1_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\POTEC\Desktop\TavernKeeper\Slahser for Mobile\1_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\POTEC\Desktop\TavernKeeper\Slahser for Mobile\1_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\POTEC\Desktop\TavernKeeper\Slahser for Mobile\1_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\POTEC\Desktop\TavernKeeper\Slahser for Mobile\1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\POTEC\Desktop\TavernKeeper\Slahser for Mobile\1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\POTEC\Desktop\TavernKeeper\Slahser for Mobile\1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\POTEC\Desktop\TavernKeeper\Slahser for Mobile\1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\POTEC\Desktop\TavernKeeper\Slahser for Mobile\1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\POTEC\Desktop\TavernKeeper\Slahser for Mobile\1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.087 seconds
-Platform assembly: C:\Users\POTEC\Desktop\TavernKeeper\Slahser for Mobile\1_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\POTEC\Desktop\TavernKeeper\Slahser for Mobile\1_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\POTEC\Desktop\MobileSlasher\1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\POTEC\Desktop\MobileSlasher\1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\POTEC\Desktop\MobileSlasher\1_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\POTEC\Desktop\MobileSlasher\1_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\POTEC\Desktop\MobileSlasher\1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\POTEC\Desktop\MobileSlasher\1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\POTEC\Desktop\MobileSlasher\1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\POTEC\Desktop\MobileSlasher\1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\POTEC\Desktop\MobileSlasher\1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\POTEC\Desktop\MobileSlasher\1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.284 seconds
+Platform assembly: C:\Users\POTEC\Desktop\MobileSlasher\1_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\POTEC\Desktop\MobileSlasher\1_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.283213 ms
+UnloadTime: 2.073577 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 8.448198 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1465.
+Total: 0.541272 ms (FindLiveObjects: 0.096846 ms CreateObjectMapping: 0.050885 ms MarkObjects: 0.385743 ms  DeleteObjects: 0.006565 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.604119 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 1465.
+Total: 0.502287 ms (FindLiveObjects: 0.091511 ms CreateObjectMapping: 0.028315 ms MarkObjects: 0.375074 ms  DeleteObjects: 0.006155 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.928308 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 1465.
+Total: 0.516650 ms (FindLiveObjects: 0.107515 ms CreateObjectMapping: 0.028725 ms MarkObjects: 0.371380 ms  DeleteObjects: 0.007796 ms)
+
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 2cb4 -> priority: 1 
+  Thread -> id: 4018 -> priority: 1 

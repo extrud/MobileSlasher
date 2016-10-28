@@ -3,7 +3,13 @@ using System.Collections;
 
 public class TouchScreenMove : MonoBehaviour {
     bool touch;
+    bool Live = true;
+    public float MaxSTM;
+    public float STMReg;
     DemageScript dms;
+    public float CurrentSTM;
+    public float DashSTMCoast;
+    public float AttackSTMCoast;
     Vector2 startTouchpos;  
     Vector2 curentTouchpos;
     MoveScript ms;
@@ -29,7 +35,7 @@ public class TouchScreenMove : MonoBehaviour {
     void Start () {
    
         anim = GetComponent<Animator>();
-        Input.simulateMouseWithTouches = false;
+        Input.simulateMouseWithTouches = true;
         ms = GetComponent<MoveScript>();
         AtS = GetComponent<AttackScript>();
         
@@ -39,7 +45,8 @@ public class TouchScreenMove : MonoBehaviour {
     }
     void OnDie()
     {
-        Destroy(this.gameObject);
+        anim.Play("Die");
+        Live = false;
     }
     IEnumerator DeshCD()
     {
@@ -50,6 +57,7 @@ public class TouchScreenMove : MonoBehaviour {
     }
     IEnumerator PainC()
     {
+        dms.Invulnerable = true;
         if (DeshCur != null)
             StopCoroutine(DeshCur);
         CamControl.blur.enabled = false;
@@ -63,6 +71,7 @@ public class TouchScreenMove : MonoBehaviour {
         yield return new WaitForSeconds(painTime);
         inpain = false;
         anim.SetBool("Painv", false);
+        dms.Invulnerable = false;
     }
     void Dmg()
     {
@@ -72,6 +81,7 @@ public class TouchScreenMove : MonoBehaviour {
     }
     IEnumerator DashCur(Vector2 dir)
     {
+        dms.Invulnerable = true;
         bool attack = false;
         CamControl.blur.enabled = true;
         indash = true;
@@ -92,10 +102,8 @@ public class TouchScreenMove : MonoBehaviour {
                     DemageScript ds = h.collider.gameObject.GetComponent<DemageScript>();
                     if (ds != null)
                     {
-                        attack = true;
                         time = 0;
-                        AtS.Attack(2, new Vector2(transform.position.x, transform.position.y) + dir * 2, 2);
-                        anim.Play("Slash", 0, 0);
+                        Attack(dir);
                     }
                 }
 
@@ -104,25 +112,59 @@ public class TouchScreenMove : MonoBehaviour {
         if(!attack)
         StartCoroutine(DeshCD());
         CamControl.blur.enabled = false;
-        anim.SetBool("Dash", false);  
+        anim.SetBool("Dash", false);
+        dms.Invulnerable = false;
         indash = false;
+    }
+    void Attack(Vector2 dir)
+    {
+        if (CurrentSTM >= AttackSTMCoast)
+        {
+            CurrentSTM -= AttackSTMCoast;
+            attack = true;
+            AtS.Attack(2, new Vector2(transform.position.x, transform.position.y) + dir * 2, 2);
+            anim.Play("Slash", 0, 0);
+        }
     }
     void Desh(Vector2 dir)
     {
-        DeshCur= StartCoroutine(DashCur(dir));
+        if (CurrentSTM >= DashSTMCoast)
+        {
+            
+            CurrentSTM -= DashSTMCoast;
+            DeshCur = StartCoroutine(DashCur(dir));
+        }
+        
     }
 
     void Update () {
+
+        if (!Live)
+        {
+            return;
+        }
         if (inpain)
         {
             return;
                 }
+        if (CurrentSTM < MaxSTM)
+        {
+            if (!indash)
+            {
+                CurrentSTM += STMReg * Time.deltaTime;
+                if (CurrentSTM > MaxSTM)
+                {
+                    CurrentSTM = MaxSTM;
+                }
+            }
+        }
         if (Input.GetMouseButton(0))
         {
             if (Input.GetMouseButtonDown(0))
             {
                 attack = true;
                 startTouchpos = Input.mousePosition;
+                curentTouchpos = Input.mousePosition;
                 touchtime = 0f;
             }
             else
@@ -135,24 +177,34 @@ public class TouchScreenMove : MonoBehaviour {
                         attack = false; touchtime = 0f;
                     }
                 }
-                if (oldmousePosition != Input.mousePosition)
-                {
+                if (Input.mousePosition !=oldmousePosition)
+                       {
                     curentTouchpos = Input.mousePosition;
                 }
+                if ((curentTouchpos - startTouchpos).magnitude > 20)
+                {
+                    anim.SetBool("Move", true);
+                    ms.Move((curentTouchpos - startTouchpos).normalized * speed * Time.deltaTime);
+                }
             }
-            anim.SetBool("Move", true);
-            ms.Move((curentTouchpos - startTouchpos).normalized * speed * Time.deltaTime);
+            
         }
         else
         {
+            
             if (attack)
             {
-               
-                if (!indash&& !DeshInCD)
-                Desh((curentTouchpos - startTouchpos).normalized);
-                attack = false;
+                if ((curentTouchpos - startTouchpos).magnitude > 5)
+                {
+                    if (!indash && !DeshInCD)
+                    {
+                        Desh((curentTouchpos - startTouchpos).normalized);
+                        attack = false;
+                    }
+                }
             }
             anim.SetBool("Move", false);
+            curentTouchpos = startTouchpos;
         }
 
         oldmousePosition = Input.mousePosition;
