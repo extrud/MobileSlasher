@@ -9,7 +9,7 @@ public class MoveScript : MonoBehaviour
     public void Move(Vector2 dir)
     {
         inmove = true;
-        rb2d.isKinematic = false;
+      
         if (dir.x > 0)
         {
             transform.localScale = new Vector3(1, 1, 1);
@@ -23,11 +23,16 @@ public class MoveScript : MonoBehaviour
         rb2d.MovePosition(new Vector2(transform.position.x, transform.position.y) + dir);
 
     }
-    void LateUpdate()
+    
+    void FixedUpdate()
     {
         if (!inmove)
         {
             rb2d.isKinematic = true;
+        }
+        else
+        {
+            rb2d.isKinematic = false;
         }
         inmove = false;
     }

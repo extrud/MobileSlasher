@@ -91,8 +91,9 @@ public class TouchScreenMove : MonoBehaviour {
 
         while (time > 0)
         {
-           ms.Move(dir*deshspeed*Time.deltaTime);
-            yield return new WaitForEndOfFrame();
+         
+            ms.Move(dir.normalized*(deshspeed*Time.deltaTime));
+            
             time -= Time.deltaTime;
             RaycastHit2D[] rch2d = Physics2D.CircleCastAll( new Vector2(transform.position.x,transform.position.y)+dir*1, 1, Vector2.zero);
             foreach (var h in rch2d)
@@ -108,6 +109,7 @@ public class TouchScreenMove : MonoBehaviour {
                 }
 
             }
+            yield return new WaitForEndOfFrame();
         }
         if(!attack)
         StartCoroutine(DeshCD());
@@ -138,7 +140,7 @@ public class TouchScreenMove : MonoBehaviour {
     }
 
     void Update () {
-
+       
         if (!Live)
         {
             return;
@@ -184,7 +186,7 @@ public class TouchScreenMove : MonoBehaviour {
                 if ((curentTouchpos - startTouchpos).magnitude > 20)
                 {
                     anim.SetBool("Move", true);
-                    ms.Move((curentTouchpos - startTouchpos).normalized * speed * Time.deltaTime);
+                    ms.Move((curentTouchpos - startTouchpos).normalized * (speed*Time.deltaTime));
                 }
             }
             

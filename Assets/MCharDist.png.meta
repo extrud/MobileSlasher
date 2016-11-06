@@ -1,0 +1,186 @@
+fileFormatVersion: 2
+guid: be98da946f7b49646b01c29fbb567e5d
+timeCreated: 1477704241
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MCharDist_0
+    21300002: MCharDist_1
+    21300004: MCharDist_2
+    21300006: MCharDist_3
+    21300008: MCharDist_4
+    21300010: MCharDist_5
+    21300012: MCharDist_6
+    21300014: MCharDist_7
+    21300016: MCharDist_8
+    21300018: MCharDist_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 60
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MCharDist_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 277
+        width: 113
+        height: 73
+      alignment: 9
+      pivot: {x: 0.5077723, y: 0.13906066}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MCharDist_1
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 285
+        width: 57
+        height: 61
+      alignment: 9
+      pivot: {x: 0.19182949, y: 0.30562505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MCharDist_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 153
+        width: 86
+        height: 85
+      alignment: 9
+      pivot: {x: 0.56638193, y: 0.102188826}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MCharDist_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 212
+        width: 40
+        height: 58
+      alignment: 9
+      pivot: {x: 0.17064247, y: 0.85585654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MCharDist_4
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 94
+        width: 61
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MCharDist_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 147
+        width: 40
+        height: 57
+      alignment: 9
+      pivot: {x: 0.44510764, y: 0.8081694}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MCharDist_6
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 54
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MCharDist_7
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 8
+        width: 40
+        height: 72
+      alignment: 9
+      pivot: {x: 0.35727865, y: 0.9452414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MCharDist_8
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 11
+        width: 46
+        height: 70
+      alignment: 9
+      pivot: {x: 0.15632297, y: 0.9203221}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
