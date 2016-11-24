@@ -5,11 +5,13 @@ public class MoveScript : MonoBehaviour
 {
     public bool inmove;
     Rigidbody2D rb2d;
+    bool kinm = false;
     // Use this for initialization
     public void Move(Vector2 dir)
     {
         inmove = true;
-      
+        kinm = false;
+        rb2d.isKinematic = false;
         if (dir.x > 0)
         {
             transform.localScale = new Vector3(1, 1, 1);
@@ -26,14 +28,19 @@ public class MoveScript : MonoBehaviour
     
     void FixedUpdate()
     {
-        if (!inmove)
-        {
-            rb2d.isKinematic = true;
-        }
-        else
-        {
-            rb2d.isKinematic = false;
-        }
+     
+            if (!kinm)
+            {
+                kinm = true;
+                
+            }
+            else
+            {
+                rb2d.isKinematic = true;
+                
+            }
+        
+    
         inmove = false;
     }
     void Start()

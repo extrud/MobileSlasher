@@ -94,7 +94,7 @@ public class TouchScreenMove : MonoBehaviour {
          
             ms.Move(dir.normalized*(deshspeed*Time.deltaTime));
             
-            time -= Time.deltaTime;
+       
             RaycastHit2D[] rch2d = Physics2D.CircleCastAll( new Vector2(transform.position.x,transform.position.y)+dir*1, 1, Vector2.zero);
             foreach (var h in rch2d)
             {
@@ -110,6 +110,7 @@ public class TouchScreenMove : MonoBehaviour {
 
             }
             yield return new WaitForEndOfFrame();
+            time -= Time.deltaTime;
         }
         if(!attack)
         StartCoroutine(DeshCD());

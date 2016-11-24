@@ -14556,7 +14556,7 @@ MonoBehaviour:
   DeshCoolDown: 0
   painTime: 1
   speed: 20
-  deshspeed: 80
+  deshspeed: 50
   timetoatack: 0.25
   deshtime: 0.2
 --- !u!50 &1987393883
